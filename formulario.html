@@ -8,6 +8,22 @@
 </head>
 
 <style>
+    
+    @media screen and (min-width: 651px max-width: 1000px){
+        .video1{
+            position: fixed;
+ 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+        
+    }
+       
+    }
+        
+    
+    
+    
     @media screen and (max-width:650px) {
         .video1{
             position: fixed;
@@ -17,7 +33,54 @@
   object-fit: cover;
         
     }
+    
 }
+#inome{
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    background-color: rgba(240, 248, 255, 0);
+    color: white;
+    
+}
+#isobrenome{
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    background-color: rgba(240, 248, 255, 0);
+    color: white;
+    
+}
+#idata{
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    background-color: rgba(240, 248, 255, 0);
+    color: white;
+}
+#itel{
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    background-color: rgba(240, 248, 255, 0);
+    color: white;
+}
+#iemail{
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    background-color: rgba(240, 248, 255, 0);
+    color: white;
+}
+
+#iestado{
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    background-color: rgba(240, 248, 255, 0);
+    color: white;
+}
+
 .video1{
     position: fixed;
 			top: 0;
@@ -64,6 +127,17 @@ display: flex;
     padding-left: 4px;
 }
 
+@keyframes mvi {
+    0%{
+        transform: translateY(-100px);
+        opacity: .50;
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+    
+
 
 
 
@@ -75,7 +149,9 @@ display: flex;
     text-align: center;
     align-items: center;
     color: white;
-    margin-top: 150
+    margin-top: 150;
+    animation: mvi 2s;
+    
 }
 
 </style>
@@ -92,7 +168,7 @@ display: flex;
     <div class="container">
         <div class="fundo">
 
-<form class="formulario"  action="cadastro.pyt" method="get" autocomplete="on" style="margin-top: 50%;">
+<form class="formulario"  action="cadastro.pyt" method="post" autocomplete="on" style="margin-top: 50%;">
 
 <fieldset class="fieldset">
     <legend>Dados Pessoais</legend>
@@ -109,13 +185,13 @@ display: flex;
     <br>
     <div class="data">
     <label for="idata">Data:</label>
-    <input type="date" name="data" id="idata" >
+    <input   type="date" name="data" id="idata" >
     </div>
     
    
     <br>
     <label for="itel">Celular:</label>
-    <input type="tel" name="tel" id="itel" autocomplete="tel" required
+    <input type="telefone" name="tel" id="itel" autocomplete="tel" required
     pattern="^\(\d{2}\)\d{5}-\d{4}$"  placeholder="ex:(11)99723-6018" size="12">
 <br>
      <br>
@@ -127,8 +203,8 @@ display: flex;
 <br>
 <label for="iestado">Estado:</label>
 <select name="estado" id="iestado">
-    <optgroup label="Região Sudeste">
-        
+    <optgroup style="color: black;" label="Região Sudeste">
+     
         <option value="SP">São Paulo</option>
         <option value="RJ"> Rio de Janeiro </option>
         <option value="MG">Minas Gerais</option>

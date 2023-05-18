@@ -1,70 +1,416 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="pag1.css" type="text/css"   >
     <title>Document</title>
+
 </head>
 <style>
-    *{
-        margin: 0;
+ @keyframes maozinha {
+    0%{
+        transform:translateX(500px) ;
     }
-.fundo{background-color: black;
+    100%{
+        transform: ;
+    }
+ }
 
-height: 80px;
 
+.arrow{
+    padding: 15px;
+    font-size: 28px;
+}
+.title{
+font-weight: 500;
+text-transform: uppercase;
+
+
+}
+.textoia{
+opacity:.7;
+
+
+
+}
+.card:hover .textocard2{
+padding: 20px;
+height: 200px;
+
+
+}
+
+
+
+
+
+.textocard2{
+padding: 0 20px;
+font-size: 18px;
+font-style: normal;
+font-weight: 100;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+overflow: hidden;
+height: 0px;
+
+}
+.textocard{align-items: center;
+    text-align: center;
+    justify-content: center;
+color: white;
+font-size: 24px;
+font-weight: 100;
+font-style: italic;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-transform: uppercase;
+
+
+
+}
+.img{
+background-image: url(https://img.olhardigital.com.br/wp-content/uploads/2023/01/evil-hacker-ai.webp);
+background-position: center;
+background-size: cover;
+width: 500px;
+height: 250px;
+align-items: center;
+justify-content: center;
+display: flex;
+
+}
+
+
+
+
+
+
+.card{
+background-image: linear-gradient(black,black);
+overflow: hidden;
+border-radius: 16px;
+color:white;
+max-width: 350px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+
+.container{
+display: flex;
+align-items: center;
+justify-content:center;
+min-height: 100vh;
+
+}
+
+.fundo1{
+
+text-align: center;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 80px;
+font-weight:100;
+
+color: white;
+
+
+
+}
+
+.fundo2{
+background-color:  #353535 ;
+
+
+}
+
+
+
+.botao{
+height:50px ;
+width: 100px;
+margin-top: -80px;
+margin-left: 45%;
+border-radius: 10px;
+background-image: url(https://solvimm.com/wp-content/uploads/2019/01/DestacadaBlog_16.png);
+background-position: center;
+font-size: 25px;
+font-weight:bolder ;
+color:white
+
+}
+.video1{
+position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    z-index: -1;
+}
+
+@keyframes movimentos{
+0%{ transform: translateY(-50px)
+
+}
+100%{
+transform: translateY(0px);
+}
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.textheader{
+text-align: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 40px;
+font-weight: 200;
+color: white;
+animation: movimentos 2s;
+padding: 15px;
+
+
+}
+@keyframes opacidade {
+    0%{
+        opacity: 30;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
+
+.fundo5{
+background-image:linear-gradient(rgb(0, 0, 66),rgb(1, 1, 120),rgb(0, 0, 190));
+text-align: center;
+justify-content: center;
+align-items: center;
+height: 100px;
+display: flex;
+}
+.fundo6{
+
+
+background-image: url(https://www.mundodomarketing.com.br/wp-content/uploads/2023/01/90-do-conteudo-online-podera-ser-gerado-por-IA-ate-2025-1200x675.jpg);
+
+background-size: 100%;
+height: 600px;
 
 
 }
 .texto1{
-    align-items: center;
-    text-align:center ;
-    color: white;
-    font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 200;
-    padding: 14px;
+    color: white;
+    text-align: right;
+    margin-right: 20px;
+
+    
 }
-.texto2{
-color: black;
+.container2{
+    background-color: rgba(255, 255, 255, 0.904);
+    display: flex;
+    height: 400px;
+}
+.text2{
+text-align: left;
+font-size: 24px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+
+}
+.topline{
+    font-weight: 600;
+    border-right: 2px solid;
+    
+    width: 20ch ;
+    white-space:initial;
+    overflow: hidden;
+    animation: digit 1s steps(23),
+    piscando 0.5s infinite step-end alternate;
+flex-direction: column;
+
+
+}
+.direcimg{
+    animation: maozinha 3s ;
+}
+
+@keyframes digit{
+    from{
+        width: 0;
+    }
+}
+@keyframes piscando{
+    50%{
+        border-color: transparent;
+    }
+}
+.container3{
+    background-color: rgb(28, 28, 28);
+   
+    height: 668px;
+    
+    
+}
+.img6:hover{
+opacity: 100;
+
+
+}
+.img6{
+    border-radius: 600px;
+    width: 300px;
+    height: 500px;
+    opacity: .30;
+    transition: all 1s;
+    padding-top:50px ;
+margin-left: 150px;
+position: absolute;
+
+  z-index: 1;
+
+
+}
+.topline2{
+    margin-left: 500px;
+}
+.text3{
+text-align: center;
+color: white;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-weight: 200;
+font-weight: 400;
+font-size: 50px;
+
+}
+.breno{ 
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: white;
+font-weight: 300;
+margin-left: 190px;
+font-size: 50px;
+margin-top: 30px;
+
+}
+.img4:hover{
+opacity: 100;
+}
+.img4{
+    border-radius: 600px;
+    width: 300px;
+    height: 500px;
+    opacity: .30;
+    transition: all 1s;
+    padding-top:50px ;
+margin-left: -10px;
 
 
 }
-.fundo2{
-    background-color: white;
-    float: left;
+.container5{
     display: flex;
 }
-.img1{
-padding-left: 1000px;
-float: left;
+.textjoao{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: white;
+font-weight: 300;
+margin-left:  580px;
+font-size: 50px;
+margin-top: 30px;
 
 }
-.textint{
-margin-top: 10px;
-text-align: left;
+.nomes{
+    display: flex;
+}
+.img5{
+    transform: rotate(-180deg);
+    align-items: center;
+    position: relative;
+    margin-left: 190px;
+    animation: maozinha2 4s ;
+
+}
+@keyframes maozinha2{
+    0%{
+        opacity:.10 ;
+    }
+    
 }
 
 
 </style>
-<div class="fundo">
 
-<h1 class="texto1">  Conceitos Iniciais </h1>
+<body>
+    <div class="fundo5">
+        
+        <p class="textheader"> Conceitos Iniciais  </p>
+        
+       </div>
+
+
+       <div class="container2">
+           <div class="text2">
+            <div class="topline">
+            <h1  style="font-weight: 500;"> Introdução </h1>
+            </div>
+           <p style="font-weight: 300;">
+            Bem-vindo ao nosso site sobre IAS (Intelligent Automation Systems)!
+            Neste espaço, mergulhe no fascinante mundo da automação inteligente e descubra como essa tecnologia está revolucionando processos e impulsionando a eficiência em diversas áreas. Se você está curioso sobre como a inteligência artificial e a automação se combinam para criar sistemas inovadores, este é o lugar certo para estar.
+           </p>
+      </div>
+       <div class="direcimg">
+         <img src="maoIA.png">
+    </div>
+
+ </div>
+
+
+    </div>
+    <div class="fundo6">
+        <h1 class="texto1" style="font-weight: 500; margin-right: 110px;"> Oque nosso site viabiliza</h1>
+      <br>
+     <p class="texto1" >Bem-vindo ao nosso site sobre IAS (Intelligent Automation Systems)!</p>
+     <p class="texto1" >Nossa missão é fornecer informações relevantes e atualizadas sobre IAS</p>
+      
+     <p class="texto1" > Seja você um entusiasta da tecnologia, um profissional em busca de   </p>
+     <p class="texto1" > soluções para otimizar operações ou simplesmente alguém interessado</p>
+     <p class="texto1" >  como a automação inteligente pode moldar o futuro</p> 
+    <p class="texto1" > aqui você encontrará conteúdo valioso e esclarecedor.</p>]
+    <br>
+      <p class="texto1"> Em nosso site, você encontrará artigos aprofundados sobre os      </p>
+      <p class="texto1">  conceitos fundamentais de IAS, incluindo inteligência artificial  </p>
+      <p class="texto1"> aprendizado de máquina, automação robótica de processos </p>
+      <p class="texto1">(RPA) e outras tecnologias relacionadas. Além disso,  </p>
+      <p class="texto1">  forneceremos estudos de caso  inspiradores e análises de  </p>
+       <p class="texto1"> tendências para  mantê-lo informado sobre os avanços mais </p>
+       <p class="texto1"> recentes nesse campo em constante evolução. </p>
+    </div>
+    <div class="container3">
+        <div class="container4">
+<h1 class="text3">Desenvolvedores</h1>
+</div>
+<div class="nomes">
+<h1 class="breno">Breno</h1>
+<h1 class="textjoao">João Vitorio</h1>
 </div>
 
-<div class="fundo2">
 
- <img class="img1" src="robot.png">
- 
-<h1 class="textint">
-    yjwdjhwgrerbildfilçef
-</h1>
+    <img  class="img6" src="brenis.jpg">
 
+<img  class="img5"  src="maozinha2.png">
 
-</div>
+<img class="img4" src="eu.JPG">
+
 
 </div>
+</div>
+    </div>
     
 </body>
 </html>
