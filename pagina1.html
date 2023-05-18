@@ -208,16 +208,19 @@ height: 600px;
 }
 .texto1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: right;
     margin-right: 20px;
 
     
 }
 .container2{
-    background-color: rgba(255, 255, 255, 0.904);
+   background-color: rgb(255, 255, 255);
+    background-size: 100%;
     display: flex;
     height: 400px;
+    background-position: center;
+    
 }
 .text2{
 text-align: left;
@@ -284,7 +287,7 @@ position: absolute;
 }
 .text3{
 text-align: center;
-color: white;
+color: rgb(255, 255, 255);
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-weight: 400;
 font-size: 50px;
@@ -343,7 +346,19 @@ margin-top: 30px;
     
 }
 
-
+.maoIA1{
+    position: absolute;
+    z-index: 2;
+ 
+}
+.tinta{
+    position: absolute;
+    z-index: 0;
+    width: 600px;
+    height:400px ;
+    margin-left: 1000px;
+    animation: 3s
+}
 </style>
 
 <body>
@@ -360,14 +375,20 @@ margin-top: 30px;
             <h1  style="font-weight: 500;"> Introdução </h1>
             </div>
            <p style="font-weight: 300;">
-            Bem-vindo ao nosso site sobre IAS (Intelligent Automation Systems)!
-            Neste espaço, mergulhe no fascinante mundo da automação inteligente e descubra como essa tecnologia está revolucionando processos e impulsionando a eficiência em diversas áreas. Se você está curioso sobre como a inteligência artificial e a automação se combinam para criar sistemas inovadores, este é o lugar certo para estar.
+            <p>Bem-vindo ao nosso site sobre IAS (Intelligent Automation Systems)!
+            Neste espaço,</p>
+            <p>mergulhe no fascinante mundo da automação inteligente e descubra como</p>
+            <p>essa tecnologia está revolucionando processos e impulsionando</p>
+            <p>a eficiência em diversas áreas. Se você está curioso sobre como a inteligência artificial e  a </p>
+            <p>automação se combinam para criar sistemas inovadores, este é o lugar certo para estar.</p>
            </p>
       </div>
-       <div class="direcimg">
-         <img src="maoIA.png">
+       <pre color="white">  </pre>
+      <div class="direcimg">
+         <img class="maoIA1"  src="maoIA.png" >
+         
     </div>
-
+    <img class="tinta" src="azulzin2.png">
  </div>
 
 
