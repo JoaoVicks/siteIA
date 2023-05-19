@@ -9,6 +9,7 @@
 
 </head>
 <style>
+    
  @keyframes maozinha {
     0%{
         transform:translateX(500px) ;
@@ -206,12 +207,20 @@ height: 600px;
 
 
 }
+
+@keyframes mvt {
+    0%{
+        opacity: .50 ;
+    }
+    
+}
+
 .texto1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(255, 255, 255);
     text-align: right;
     margin-right: 20px;
-
+animation: mvt 4s;
     
 }
 .container2{
@@ -241,9 +250,10 @@ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 flex-direction: column;
 
 
-}
+} 
 .direcimg{
-    animation: maozinha 3s ;
+  
+    position: relative;
 }
 
 @keyframes digit{
@@ -297,7 +307,7 @@ font-size: 50px;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 color: white;
 font-weight: 300;
-margin-left: 190px;
+margin-left: 230px;
 font-size: 50px;
 margin-top: 30px;
 
@@ -312,7 +322,7 @@ opacity: 100;
     opacity: .30;
     transition: all 1s;
     padding-top:50px ;
-margin-left: -10px;
+margin-left: 30px;
 
 
 }
@@ -345,19 +355,41 @@ margin-top: 30px;
     }
     
 }
-
+@keyframes opacidade {
+0%{
+    opacity: .100;
+}    
+100%{
+    opacity: ;
+}
+}
+@keyframes movetinta {
+    0%{
+        transform:translateX(5px) ;
+        
+    }
+ 50%{
+    transform: translateX(-5px);
+ }
+100%{
+    transform: translateX(5px);
+}
+}
 .maoIA1{
     position: absolute;
-    z-index: 2;
- 
+    z-index: 1;
+    margin-left:25px ;
+    animation: maozinha 3s ;
 }
 .tinta{
-    position: absolute;
+   
     z-index: 0;
-    width: 600px;
+    width: 590px;
     height:400px ;
-    margin-left: 1000px;
-    animation: 3s
+    margin-left: 50px;
+    animation: movetinta 4s infinite ease-in-out ,
+     opacidade 6s ;
+
 }
 </style>
 
@@ -386,11 +418,11 @@ margin-top: 30px;
        <pre color="white">  </pre>
       <div class="direcimg">
          <img class="maoIA1"  src="maoIA.png" >
-         
-    </div>
-    <img class="tinta" src="azulzin2.png">
- </div>
+             <img class="tinta" src="azulzin2.png">
+   </div>
 
+ 
+ </div>
 
     </div>
     <div class="fundo6">
@@ -426,7 +458,7 @@ margin-top: 30px;
 
 <img  class="img5"  src="maozinha2.png">
 
-<img class="img4" src="eu.JPG">
+<img class="img4" src="eu2.JPG">
 
 
 </div>
